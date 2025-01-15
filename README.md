@@ -8,8 +8,7 @@ Things that you need to install the software and how to install them
 
 ```
 You should have ROS1 installed.
-You should have OpenCV installed.
-You should have a working ROS workspace.
+You should have OpenCV for ROS1 installed.
 ```
 # Installation
 
