@@ -12,16 +12,16 @@ First, create a workspace:
 
 ```
 cd ~
-mkdir -p tidbots_ws/src
-cd tidbots_ws
+mkdir -p robovision_ros1_ws/src
+cd robovision_ros1_ws
 catkin_make
 ```
 
 Then, clone this repository into the src folder:
 
 ```
-cd ~/tidbots_ws/src
-git https://gitlab.com/tidbots/robointro.git
+cd ~/robovision_ros1_ws/src
+git clone https://github.com/ARTenshi/robovision_ros1.git
 cd ..
 catkin_make
 ```
@@ -67,7 +67,7 @@ if (counter == 0)
 Let's test our code. First, we need to compile our code:
 
 ```
-cd ~/tidbots_ws
+cd ~/robovision_ros1_ws
 catkin_make
 ```
 
@@ -80,14 +80,14 @@ roscore
 And, in a different terminal, run:
 
 ```
-source ~/tidbots_ws/devel/setup.bash
-rosrun introvision_images my_publisher ~/tidbots_ws/src/robointro/1_images/data/baboon.png
+source ~/robovision_ros1_ws/devel/setup.bash
+rosrun introvision_images my_publisher ~/robovision_ros1_ws/src/robovision_ros1/1_images/data/baboon.png
 ```
 
 Finally, in a new terminal, run this command:
 
 ```
-source ~/tidbots_ws/devel/setup.bash
+source ~/robovision_ros1_ws/devel/setup.bash
 rosrun introvision_processing my_processing
 ```
 
@@ -113,14 +113,14 @@ roscore
 In a different terminal, run:
 
 ```
-source ~/tidbots_ws/devel/setup.bash
-rosrun introvision_images my_publisher ~/tidbots_ws/src/robointro/1_images/data/baboon.png
+source ~/robovision_ros1_ws/devel/setup.bash
+rosrun introvision_images my_publisher ~/robovision_ros1_ws/src/robovision_ros1/1_images/data/baboon.png
 ```
 
 Finally, in a new terminal:
 
 ```
-source ~/tidbots_ws/devel/setup.bash
+source ~/robovision_ros1_ws/devel/setup.bash
 rosrun introvision_processing my_processing.py
 ```
 
