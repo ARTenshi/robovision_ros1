@@ -2,7 +2,7 @@
 
 The goal of this repository is to introduce students to image publishers and subscribers using ROS and OpenCV.
 
-# 0. Get the introduction to robot vision libraries
+# 0. Get the robot vision libraries
 
 ## 0.1 Clone this repository
 
@@ -12,16 +12,16 @@ First, create a workspace:
 
 ```
 cd ~
-mkdir -p tidbots_ws/src
-cd tidbots_ws
+mkdir -p robovision_ros1_ws/src
+cd robovision_ros1_ws
 catkin_make
 ```
 
 Then, clone this repository into the src folder:
 
 ```
-cd ~/tidbots_ws/src
-git clone https://gitlab.com/trcp/robointro.git
+cd ~/robovision_ros1_ws/src
+git clone https://github.com/ARTenshi/robovision_ros1.git
 cd ..
 catkin_make
 ```
@@ -112,8 +112,8 @@ You should see something like:
 Now, in the same terminal, run the following commands:
 
 ```
-source ~/tidbots_ws/devel/setup.bash
-rosrun introvision_images my_publisher ~/tidbots_ws/src/robointro/1_images/data/baboon.png
+source ~/robovision_ros1_ws/devel/setup.bash
+rosrun introvision_images my_publisher ~/robovision_ros1_ws/src/robovision_ros1_ws/data/images/baboon.png
 ```
 
 Then, again, in a new terminal, run this command:
@@ -231,7 +231,7 @@ Now let's test it!
 First, we need to compile our code, in a new terminal run:
 
 ```
-cd ~/tidbots_ws
+cd ~/robovision_ros1_ws
 catkin_make
 ```
 
@@ -244,8 +244,8 @@ roscore
 Then, in a different terminal, run:
 
 ```
-source ~/tidbots_ws/devel/setup.bash
-rosrun introvision_images my_publisher ~/tidbots_ws/src/robointro/1_images/data/baboon.png
+source ~/robovision_ros1_ws/devel/setup.bash
+rosrun introvision_images my_publisher ~/robovision_ros1_ws/src/robovision_ros1/data/images/baboon.png
 ```
 
 Finally, in a new terminal, run this command:
@@ -318,7 +318,7 @@ You should see somhing like:
 Now, in the same terminal, run the following commands:
 
 ```
-source ~/tidbots_ws/devel/setup.bash
+source ~/robovision_ros1_ws/devel/setup.bash
 rosrun introvision_images my_video_publisher
 ```
 
@@ -440,14 +440,14 @@ roscore
 In a second terminal, run the next command:
 
 ```
-source ~/tidbots_ws/devel/setup.bash
-rosrun introvision_images my_publisher ~/tidbots_ws/src/robointro/1_images/data/baboon.png
+source ~/robovision_ros1_ws/devel/setup.bash
+rosrun introvision_images my_publisher ~/robovision_ros1_ws/src/robovision_ros1/data/images/baboon.png
 ```
 
 Now, in a different terminal, run the following commands:
 
 ```
-source ~/tidbots_ws/devel/setup.bash
+source ~/robovision_ros1_ws/devel/setup.bash
 rosrun introvision_images my_subscriber
 ```
 
