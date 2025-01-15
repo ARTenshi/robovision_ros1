@@ -20,7 +20,7 @@ Install git:
 sudo apt-get install git
 ```
 
-## 1. ROS Install:
+## 1. ROS1 Install:
 
 ### Ubuntu 20.04:
 
@@ -85,7 +85,7 @@ rosrun introvision_images my_subscriber
 
 # Developing
 
-Basic concepts on ROS image publishers and subscribers can be found here:
+Basic concepts on ROS1 image publishers and subscribers can be found here:
 
 > [Lesson 1](https://github.com/ARTenshi/robovision_ros1/tree/main/1_images)
 
