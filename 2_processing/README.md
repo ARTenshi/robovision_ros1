@@ -6,7 +6,7 @@ The goal of this repository is to introduce students to RGB image processing usi
 
 ## 0.1 Clone this repository
 
-**Warning:** *You only need to do this once. If you have already created this repository in your local machine, pulling it again may cause a lost of your information.*
+**Warning:** *You only need to do this once. If you have already created this repository in your local machine, pulling it again may cause a loss of your information.*
 
 First, create a workspace:
 
