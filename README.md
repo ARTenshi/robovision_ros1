@@ -100,5 +100,5 @@ To work with RGBD images, enter here:
 
 # Authors
 
-* **Luis Contreras** - [ARTenshi](https://artenshi.github.io/))
+* **Luis Contreras** - [ARTenshi](https://artenshi.github.io/)
 * **Hiroyuki Okada** - [AIBot](http://aibot.jp/)
