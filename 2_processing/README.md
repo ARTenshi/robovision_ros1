@@ -81,7 +81,7 @@ And, in a different terminal, run:
 
 ```
 source ~/robovision_ros1_ws/devel/setup.bash
-rosrun introvision_images my_publisher ~/robovision_ros1_ws/src/robovision_ros1/1_images/data/baboon.png
+rosrun introvision_images my_publisher ~/robovision_ros1_ws/src/robovision_ros1/data/images/baboon.png
 ```
 
 Finally, in a new terminal, run this command:
@@ -114,7 +114,7 @@ In a different terminal, run:
 
 ```
 source ~/robovision_ros1_ws/devel/setup.bash
-rosrun introvision_images my_publisher ~/robovision_ros1_ws/src/robovision_ros1/1_images/data/baboon.png
+rosrun introvision_images my_publisher ~/robovision_ros1_ws/src/robovision_ros1/data/images/baboon.png
 ```
 
 Finally, in a new terminal:
