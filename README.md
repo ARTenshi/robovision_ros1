@@ -4,7 +4,7 @@ We present a short introduction to Robot Vision. We first present the basic conc
 
 # Prerequisites
 
-What things you need to install the software and how to install them
+Things that you need to install the software and how to install them
 
 ```
 You should have ROS1 installed.
@@ -90,7 +90,7 @@ Basic concepts on ROS image publishers and subscribers can be found here:
 
 > [Lesson 1](https://github.com/ARTenshi/robovision_ros1/tree/main/1_images)
 
-To learn how process RGB images, follows the indications here:
+To learn how to process RGB images, follow the indications here:
 
 > [Lesson 2](https://github.com/ARTenshi/robovision_ros1/tree/main/2_processing)
 
