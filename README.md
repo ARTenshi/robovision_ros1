@@ -2,6 +2,8 @@
 
 We present a short introduction to Robot Vision. We first present the basic concepts of image publishers and subscribers in ROS1 and then we apply some basic commands to introduce the students to the digital image processing theory; finally, we present some RGBD and point cloud notions and applications.
 
+For a ROS2 version of this project, please refer to [here](https://github.com/ARTenshi/robovision_ros2).
+
 # Prerequisites
 
 Things that you need to install the software and how to install them
