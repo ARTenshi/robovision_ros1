@@ -1,12 +1,12 @@
 # Point Cloud processing with ROS
 
-We present and introduction to Point Cloud data in ROS and propose a simple task where the students should track a person moving in front of a RGBD camera mounted in a mobile robot.
+We present an introduction to Point Cloud data in ROS and propose a simple task where the students should track a person moving in front of an RGBD camera mounted on a mobile robot.
 
-# 0. Get the introduction to robot vision libraries
+# 0. Get the robot vision libraries
 
 ## 0.1 Clone this repository
 
-**Warning:** *You only need to do this once. If you have already created this repository in your local machine, pulling it again may cause a lost of your information.*
+**Warning:** *You only need to do this once. If you have already created this repository in your local machine, pulling it again may cause a loss of your information.*
 
 First, create a workspace:
 
@@ -35,7 +35,7 @@ sudo apt-get install ros-$release-ros-numpy
 
 where `$release` is your ROS version
 
-Also, be sure you that you have an RGBD camera or a rosbag containing RGBD data as the one provided in:
+Also, be sure that you have an RGBD camera or a rosbag containing RGBD data as the one provided in:
 
 > ~/robovision_ros1_ws/src/robovision_ros1/data/rosbags/
 
@@ -134,7 +134,7 @@ and the XZ axes (top view) and the `YAW` angle of a point `p` on the plane are:
 
 # 2. Point Cloud's manipulation
 
-For ease, wi will only provide the code in Python for this unit. The interested reader can program their C++ version.
+For ease, we will only provide the code in Python for this unit. The interested reader can program their C++ version.
 
 ## 2.1 Single element access
 
@@ -144,7 +144,7 @@ Our subscriber  to the `/camera/depth_registered/points` calls the `callback_poi
 pc = ros_numpy.numpify(msg)
 ```
 
-As we mentioned before, the point cloud contains the 3D position in the space of EACH pixel, and therefore the dimensions of our array is the same as de dimensions of our image
+As we mentioned before, the point cloud contains the 3D position in the space of EACH pixel, and therefore the dimensions of our array are the same as de dimensions of our image
 
 ```
 rows, cols = pc.shape
@@ -237,7 +237,7 @@ You can use a structure where you compare if every image 3D point is inside this
   <img src="images/scene_crop.jpg" width="500">
 </p>
 
-Don't forget to use the appropriate signs, especially in the Y axis, if the camera is 1.0 meter above the floor, what condition should any point different than the floor meet? Again, pay special attention to the Y axis direction.
+Don't forget to use the appropriate signs, especially in the Y-axis, if the camera is 1.0 meter above the floor, what condition should any point different than the floor meet? Again, pay special attention to the Y-axis direction.
 
 **Hint** Remember the `ROLL`, `PITCH` and `YAW` definitions
 
@@ -276,5 +276,5 @@ Would you accept the challenge?
 
 ## Authors
 
-* **Luis Contreras** - [AIBot](http://aibot.jp/)
+* **Luis Contreras** - [ARTenshi](https://artenshi.github.io/)
 * **Hiroyuki Okada** - [AIBot](http://aibot.jp/)
